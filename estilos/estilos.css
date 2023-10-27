@@ -490,16 +490,19 @@ footer {
     .plan-basic-container:hover>#plan-basic {
         opacity: .9;
         scale: 1.05;
+        z-index: 1;
     }
 
     .plan-premium-container:hover>#plan-premium {
         opacity: .9;
         scale: 1.05;
+        z-index: 1;
     }
 
     .plan-exclusive-container:hover>#plan-exclusive {
         opacity: .9;
         scale: 1.05;
+        z-index: 1;
     }
 
     /* ESTILOS SERVICIOS */
