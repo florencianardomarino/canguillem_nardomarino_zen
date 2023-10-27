@@ -550,6 +550,7 @@ footer {
 /* ESTILOS DESKTOP */
 
 @media screen and (min-width:921px) {
+
     /* HEADER */
     #logo {
         font-size: 45px;
