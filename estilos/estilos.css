@@ -330,10 +330,13 @@ video {
     text-transform: uppercase;
     color: var(--secondary-color);
     border: none;
+    transition: 0.5s;
 }
 
 .button input:hover{
     transform: scale(1.1);
+    box-shadow: 0px 14px 17px -11px #E3C08B
+
 }
 
 /* BACKGROUND */
@@ -480,14 +483,17 @@ footer {
 
     .plan-basic-container:hover>#plan-basic {
         opacity: .9;
+        scale: 1.05;
     }
 
     .plan-premium-container:hover>#plan-premium {
         opacity: .9;
+        scale: 1.05;
     }
 
     .plan-exclusive-container:hover>#plan-exclusive {
         opacity: .9;
+        scale: 1.05;
     }
 
     /* ESTILOS TABLET SERVICIOS */
@@ -599,3 +605,4 @@ footer {
         padding: 20px 10px;
     }
 }
+
