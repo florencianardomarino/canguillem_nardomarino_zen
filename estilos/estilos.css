@@ -489,19 +489,16 @@ footer {
 
     .plan-basic-container:hover>#plan-basic {
         opacity: .9;
-        scale: 1.05;
         z-index: 1;
     }
 
     .plan-premium-container:hover>#plan-premium {
         opacity: .9;
-        scale: 1.05;
         z-index: 1;
     }
 
     .plan-exclusive-container:hover>#plan-exclusive {
         opacity: .9;
-        scale: 1.05;
         z-index: 1;
     }
 
@@ -607,6 +604,18 @@ footer {
     .plan-textos {
         width: 80%;
         margin-left: 20px;
+    }
+
+    .plan-basic-container:hover>#plan-basic {
+        scale: 1.05;
+    }
+
+    .plan-premium-container:hover>#plan-premium {
+        scale: 1.05;
+    }
+
+    .plan-exclusive-container:hover>#plan-exclusive {
+        scale: 1.05;
     }
 
     .background {
