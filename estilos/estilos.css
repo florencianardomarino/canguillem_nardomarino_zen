@@ -372,10 +372,6 @@ video {
     margin: 40px auto 10px auto;
 }
 
-.fotorama__wrap{
-    margin: auto;
-}
-
 footer {
     background-color: var(--main-color);
     width: 100%;
