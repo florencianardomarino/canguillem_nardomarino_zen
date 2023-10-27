@@ -1,0 +1,587 @@
+@import url(./variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+#contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos mobile */
+
+/* HEADER */
+
+header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    height: 70px;
+    position: fixed;
+    z-index: 2;
+}
+
+#logo {
+    background-image: url(../imagenes/logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 0;
+    width: 50px;
+    height: auto;
+    margin-left: 5vw;
+}
+
+#nav-bar {
+    background-color: var(--main-color);
+    position: absolute;
+    top: -250px;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-bar ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+#nav-bar ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+#nav-bar ul li a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+#nav-bar ul li a:hover {
+    font-size: 18px;
+}
+
+/* INICIO MENU HAMBURGUESA */
+
+#cerrar {
+    background-image: url(../imagenes/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    display: none;
+    margin-right: 5vw;
+}
+
+#abrir {
+    background-image: url(../imagenes/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    margin-right: 5vw;
+}
+
+#abrir:target {
+    display: none;
+}
+
+#abrir:target~#cerrar {
+    display: block;
+}
+
+#abrir:target~#nav-bar {
+    top: 70px;
+}
+
+#cerrar:target~#abrir {
+    display: block;
+}
+
+/* FIN MENU HAMBURGUESA */
+
+/* BANNER */
+
+#inicio picture img {
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+}
+
+/* SECCION NOSOTROS */
+
+#nosotros {
+    margin: 50px auto;
+}
+
+.titulo {
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: 35px;
+    padding-left: 5vw;
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+#nosotros p {
+    width: 90%;
+    margin: 5vw auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* SECCION PLANES */
+
+#planes {
+    margin: 50px auto;
+}
+
+#planes>p {
+    width: 90%;
+    margin: 5vw auto;
+}
+
+.cards-planes>li {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 10px auto
+}
+
+.cards-planes li picture img {
+    width: 100%;
+}
+
+#plan-basic,
+#plan-premium,
+#plan-exclusive {
+    background-color: var(--main-color);
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--white);
+    font-size: 13px;
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+}
+
+#plan-basic h3,
+#plan-premium h3,
+#plan-exclusive h3 {
+    font-size: 16px;
+}
+
+#plan-basic h4,
+#plan-premium h4,
+#plan-exclusive h4 {
+    font-weight: 300;
+    margin-left: 3px;
+}
+
+.plan-titulos {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+/* SECCION SERVICIOS */
+
+#servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#servicios p {
+    width: 90%;
+    margin: 5vw auto;
+}
+
+#servicios div img {
+    width: 100%;
+    margin: 15px auto;
+}
+
+#servicios div h4 {
+    color: var(--secondary-color);
+    font-size: 32px;
+    margin: 5vw;
+}
+
+.boton-mas,
+.boton-menos {
+    background-color: var(--main-color);
+    padding: 5px 8px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 8px;
+    margin-left: 5vw;
+    max-width: 100px;
+    text-align: center;
+}
+
+#yoga:target {
+    display: none;
+}
+
+#yoga:target~.boton-menos {
+    display: block;
+}
+
+#yoga:target~#yoga-texto {
+    display: block;
+}
+
+#nutricion:target {
+    display: none;
+}
+
+#nutricion:target~.boton-menos {
+    display: block;
+}
+
+#nutricion:target~#nutricion-texto {
+    display: block;
+}
+
+#astrologia:target {
+    display: none;
+}
+
+#astrologia:target~.boton-menos {
+    display: block;
+}
+
+#astrologia:target~#astrologia-texto {
+    display: block;
+}
+
+#servicios div p,
+.boton-menos {
+    display: none;
+}
+
+.icono-yoga {
+    width: 100%;
+    width: 100%;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../imagenes/flor_loto.png);
+}
+
+.icono-nutricion {
+    width: 100%;
+    width: 100%;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../imagenes/om.png);
+}
+
+.icono-astrologia {
+    width: 100%;
+    width: 100%;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../imagenes/yinyang.png);
+}
+
+.button {
+    width: 100%;
+    max-width: 200px;
+}
+
+.button input {
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 8px    16px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    border: none;
+}
+
+.button input:hover{
+    transform: scale(1.1);
+}
+
+/* BACKGROUND */
+
+.background {
+    background-image: url('../imagenes/background_mobile.jpg');
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 30px;
+}
+
+/* SECCION COMUNIDAD */
+
+#comunidad {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#comunidad p {
+    width: 90%;
+    margin: 5vw auto;
+}
+
+.fotorama {
+    width: 100vw;
+    max-width: 1200px;
+    margin: 40px auto 10px auto;
+}
+
+.fotorama__wrap{
+    margin: auto;
+}
+
+footer {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    font-size: 10px;
+}
+
+.redes-sociales {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales li a {
+    display: block;
+    margin: 15px 5px;
+}
+
+.redes-sociales li a img {
+    width: 30px;
+}
+
+@media screen and (min-width: 570px)  {
+
+    /* ESTILOS TABLET PLANES */
+
+    #plan-basic h3,
+    #plan-premium h3,
+    #plan-exclusive h3 {
+        font-size: 35px;
+    }
+
+    #plan-basic h4,
+    #plan-premium h4,
+    #plan-exclusive h4 {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+    #plan-basic p,
+    #plan-premium p,
+    #plan-exclusive p {
+        font-size: 20px;
+        margin: 5px 0px;
+    }
+}
+
+@media screen and (min-width: 741px) {
+    #logo {
+        font-size: 45px;
+        color: var(--secondary-color);
+        font-weight: 900;
+        height: 50px;
+        width: 155px;
+        background-position: right;
+        margin: auto 5vw;
+    }
+
+    #abrir {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #nav-bar {
+        position: relative;
+        text-align: center;
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+        display: block;
+        top: 0;
+        margin-right: 5vw;
+    }
+
+    #nav-bar ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #nav-bar ul li {
+        margin-bottom: 0px;
+    }
+
+    #plan-basic,
+    #plan-premium,
+    #plan-exclusive {
+        display: none;
+        padding: 60px 30px;
+    }
+
+    .plan-basic-container:hover>#plan-basic {
+        display: block;
+        opacity: .9;
+    }
+
+    .plan-premium-container:hover>#plan-premium {
+        display: block;
+        opacity: .9;
+    }
+
+    .plan-exclusive-container:hover>#plan-exclusive {
+        display: block;
+        opacity: .9;
+    }
+
+    /* ESTILOS TABLET SERVICIOS */
+
+    #yoga,
+    #nutricion,
+    #astrologia {
+        display: none;
+    }
+
+    #servicios div p {
+        display: block;
+    }
+
+    .servicio1,
+    .servicio2,
+    .servicio3 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .servicio1,
+    .servicio3 {
+        flex-direction: row-reverse;
+    }
+
+    article {
+        width: 50%;
+    }
+
+    #servicios div picture {
+        width: 45%;
+        height: auto;
+    }
+
+    .redes-sociales li a img:hover {
+        transform: scale(1.3);
+    }
+
+    .background {
+        background-image: url('../imagenes/background_tablet.jpg');
+    }
+}
+
+@media screen and (min-width:921px) {
+    .cards-planes{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        list-style: none;
+    }
+
+    #plan-basic,
+    #plan-premium,
+    #plan-exclusive {
+        padding: 5px;
+    }
+
+    #plan-basic h3,
+    #plan-premium h3,
+    #plan-exclusive h3 {
+        font-size: 17px;
+    }
+
+    #plan-basic h4,
+    #plan-premium h4,
+    #plan-exclusive h4 {
+        font-size: 14px;
+        margin-left: 2px;
+    }
+
+    #plan-basic p,
+    #plan-premium p,
+    #plan-exclusive p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .plan-titulos{
+        flex-direction: column;
+    }
+
+    .plan-textos{   
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    .background {
+        background-image: url('../imagenes/background_desktop.jpg');
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #plan-basic,
+    #plan-premium,
+    #plan-exclusive {
+        padding: 20px 10px;
+    }
+}

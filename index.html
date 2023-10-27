@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estefanía Canguillem y Florencia Nardomarino | Diseño Multimedial | DMT2AV | Modalidad Virtual | Turno
+        tarde | Año 2023</title>
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <h1 id="logo">Zen</h1>
+            <a href="#abrir" id="abrir"></a>
+            <a href="#cerrar" id="cerrar"></a>
+            <nav id="nav-bar">
+                <ul>
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#nosotros">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#planes">Planes</a>
+                    </li>
+                    <li>
+                        <a href="#servicios">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="#comunidad">Comunidad</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="inicio">
+            <picture>
+                <source media="(max-width: 740px)" srcset="imagenes/main_banner_mobile.jpg" alt="postura de yoga">
+                <source media="(min-width: 741px) and (max-width:920px)" srcset="imagenes/main_banner_tablet.jpg"
+                    alt="postura de yoga">
+                <img src="./imagenes/main_banner_desktop.jpg" alt="postura de yoga">
+            </picture>
+        </section>
+        <section id="nosotros">
+            <h2 class="titulo">Nosotros</h2>
+            <p>
+                ¡Bienvenidos a <strong>Zen</strong>, tu refugio de bienestar integral! En Zen, creemos en la armonía
+                total entre cuerpo, mente y espíritu. Nuestra misión es ayudarte a descubrir el equilibrio en tu vida a
+                través de tres pilares fundamentales: yoga, nutrición y astrología.
+            </p>
+            <video autoplay="true" loop="true" controls="true" src="./videos/meditacion.mp4"></video>
+        </section>
+        <section id="planes">
+            <h2 class="titulo">Planes</h2>
+            <p>Encuentra el plan perfecto para tu bienestar</p>
+            <ul class="cards-planes">
+                <li class="plan-basic-container">
+                    <div id="plan-basic">
+                        <ul class="plan-titulos">
+                            <li>
+                                <h3>Plan Basic</h3>
+                            </li>
+                            <li>
+                                <h4>Bienestar Inicial.</h4>
+                            </li>
+                        </ul>
+                        <ul class="plan-textos">
+                            <li>
+                                <p>
+                                    Acceso a clases de yoga en línea.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Recetas saludables y consejos de nutrición.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Contenido astrológico básico.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Comunidad Zen y foros de apoyo.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <picture>
+                        <source media="(max-width: 740px)" srcset="./imagenes/plan_basic_mobile.jpg"
+                        alt="postura de yoga">
+                        <source media="(min-width: 741px) and (max-width:920px)"
+                        srcset="./imagenes/plan_basic_tablet.jpg" alt="postura de yoga">
+                        <img src="./imagenes/plan_basic_desktop.jpg" alt="postura de yoga">
+                    </picture>
+                </li>
+                <li class="plan-premium-container">
+                    <div id="plan-premium">
+                        <ul class="plan-titulos">
+                            <li>
+                                <h3>Plan Premium</h3>
+                            </li>
+                            <li>
+                                <h4>Bienestar Completo</h4>
+                            </li>
+                        </ul>
+                        <ul class="plan-textos">
+                            <li>
+                                <p>
+                                    Acceso ilimitado a clases de yoga en línea.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Planes de comidas personalizados y asesoramiento nutricional.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Lectura astrológica personalizada.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Comunidad Zen y foros de apoyo.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Descuentos exclusivos en eventos y talleres.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <picture>
+                        <source media="(max-width: 740px)" srcset="./imagenes/plan_premium_mobile.jpg"
+                            alt="postura de yoga">
+                        <source media="(min-width: 741px) and (max-width:920px)"
+                            srcset="./imagenes/plan_premium_tablet.jpg" alt="postura de yoga">
+                        <img src="./imagenes/plan_premium_desktop.jpg" alt="postura de yoga">
+                    </picture>
+                </li>
+                <li class="plan-exclusive-container">
+                    <div id="plan-exclusive">
+                        <ul class="plan-titulos">
+                            <li>
+                                <h3>Plan Exclusive</h3>
+                            </li>
+                            <li>
+                                <h4>Bienestar Total</h4>
+                            </li>
+                        </ul>
+                        <ul class="plan-textos">
+                            <li>
+                                <p>
+                                    Acceso ilimitado a clases de yoga en línea y clases presenciales.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Planes de comidas personalizados y asesoramiento nutricional avanzado.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Lectura astrológica personalizada y consultas regulares.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Acceso exclusivo a eventos en vivo con expertos en bienestar.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <picture>
+                        <source media="(max-width: 740px)" srcset="./imagenes/plan_exclusive_mobile.jpg"
+                            alt="postura de yoga">
+                        <source media="(min-width: 741px) and (max-width:920px)"
+                            srcset="./imagenes/plan_exclusive_tablet.jpg" alt="postura de yoga">
+                        <img src="./imagenes/plan_exclusive_desktop.jpg" alt="postura de yoga">
+                    </picture>
+                </li>
+            </ul>
+        </section>
+        <section id="servicios">
+            <h2 class="titulo">Servicios</h2>
+            <p>
+                En Zen, ofrecemos una gama de servicios integrales que abarcan yoga, nutrición y astrología para
+                ayudarte a alcanzar tu bienestar completo.
+                Nuestros servicios incluyen:
+            </p>
+            <div class="icono-yoga"></div>
+            <div class="servicio1">
+                <article>
+                    <h4>Yoga</h4>
+                    <a class="boton-mas" id="yoga" href="#yoga">Saber Más</a>
+
+                    <p id="yoga-texto">Consideramos el yoga como una vía para conectar contigo mismo y encontrar la paz
+                        interior. Nuestros
+                        instructores altamente capacitados te guiarán en un viaje de autoexploración a través de diferentes
+                        estilos de yoga, desde el Vinyasa dinámico hasta el relajante Yin. Sea cual sea tu nivel de
+                        experiencia, estamos aquí para ayudarte a encontrar tu espacio de tranquilidad.</p>
+                    <a class="boton-menos" href="#servicios">Ocultar</a>
+                </article>
+                <picture>
+                    <source media="(max-width: 740px)" srcset="./imagenes/yoga_mobile.jpg" alt="postura de yoga">
+                    <source media="(min-width: 741px) and (max-width:920px)" srcset="./imagenes/yoga_tablet.jpg"
+                        alt="postura de yoga">
+                    <img src="./imagenes/yoga_desktop.jpg" alt="postura de yoga">
+                </picture>
+            </div>
+            <div class="icono-nutricion"></div>
+            <div class="servicio2">
+                <article>
+                    <h4>Nutrición</h4>
+                    <a class="boton-mas" id="nutricion" href="#nutricion">Saber Más</a>
+                    <p id="nutricion-texto">Creemos que una alimentación consciente es esencial para tu bienestar general.
+                        Nuestros expertos en
+                        nutrición te ayudarán a descubrir cómo nutrir tu cuerpo de la manera más saludable y equilibrada
+                        posible. Desde recetas saludables y planes de comidas personalizados hasta consejos para adoptar
+                        hábitos alimenticios más saludables, estamos comprometidos a guiarte en tu viaje hacia una vida más
+                        saludable y satisfactoria.</p>
+                    <a class="boton-menos" href="#servicios">Ocultar</a>
+                </article>
+                <picture>
+                    <source media="(max-width: 740px)" srcset="./imagenes/nutricion_mobile.jpg"
+                        alt="postura de meditacion">
+                    <source media="(min-width: 741px) and (max-width:920px)" srcset="./imagenes/nutricion_tablet.jpg"
+                        alt="postura de meditacion">
+                    <img src="./imagenes/nutricion_desktop.jpg" alt="postura de meditacion">
+                </picture>
+            </div>
+            <div class="icono-astrologia"></div>
+            <div class="servicio3">
+                <article>
+                    <h4>Astrología</h4>
+                    <a class="boton-mas" id="astrologia" href="#astrologia">Saber Más</a>
+                    <p id="astrologia-texto">La astrología es una herramienta valiosa para comprender tu yo interior y las
+                        energías que influyen
+                        en tu vida. En Zen, nuestros astrólogos te brindarán una visión única de tu perfil astral y cómo
+                        puedes aprovechar esta sabiduría ancestral para tomar decisiones más conscientes y alineadas con tu
+                        ser interior.</p>
+                    <a class="boton-menos" href="#servicios">Ocultar</a>
+                </article>
+                <picture>
+                    <source media="(max-width: 740px)" srcset="./imagenes/astrologia_mobile.jpg" alt="carta natal">
+                    <source media="(min-width: 741px) and (max-width:920px)" srcset="./imagenes/astrologia_tablet.jpg"
+                        alt="carta natal">
+                    <img src="./imagenes/astrologia_desktop.jpg" alt="carta natal">
+                </picture>
+            </div>
+            <p>En Zen, no solo te brindamos servicios, te ofrecemos una comunidad. Creemos en el poder de la comunidad
+                para inspirar, apoyar y enriquecer nuestras vidas. Únete a nuestra familia Zen y descubre un mundo de
+                bienestar, autocuidado y autodescubrimiento.
+
+                Estamos comprometidos a ayudarte a alcanzar la armonía, la salud y la plenitud en todos los aspectos de
+                tu vida. ¡Únete a nosotros en este viaje hacia el equilibrio y la serenidad!</p>
+            <a href="#" class="button" target="_blank">
+                <input type="button" value="quiero unirme"  >
+            </a>
+        </section>
+        <div class="background">
+        </div>
+        <section id="comunidad">
+            <h2 class="titulo">Comunidad</h2>
+            <p>
+                Descubre testimonios inspiradores de usuarios que han encontrado la paz interior a través del yoga, han
+                transformado su salud a través de la nutrición consciente y han explorado las maravillas del cosmos a
+                través de la astrología. La Comunidad Zen es un espacio donde la conexión, la inspiración y el bienestar
+                se entrelazan.
+                Únete a nosotros y comparte tu propia historia.
+            </p>
+            <a href="#" class="button" target="_blank">
+                <input type="button" value="quiero unirme"  >
+            </a>
+            <div class="fotorama">
+                <img src="./imagenes//galery/galery1.jpg">
+                <img src="./imagenes//galery/galery2.jpg">
+                <img src="./imagenes//galery/galery3.jpg">
+                <img src="./imagenes//galery/galery4.jpg">
+                <img src="./imagenes//galery/galery5.jpg">
+                <img src="./imagenes//galery/galery6.jpg">
+                <img src="./imagenes//galery/galery7.jpg">
+                <img src="./imagenes//galery/galery8.jpg">
+            </div>
+        </section>
+        <footer>
+            <p>Canguillem Estefanía & Nardomarino Florencia</p>
+            <p>Maquetado y Desarrollo Web | Turno Tarde DMT2AV 2023</p>
+            <ul class="redes-sociales">
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/">
+                        <img src="./imagenes/youtube.png" alt="logo youtube">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com">
+                        <img src="./imagenes/instagram.png" alt="logo instagram">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.tiktok.com">
+                        <img src="./imagenes/tiktok.png" alt="logo tiktok">
+                    </a>
+                </li>
+            </ul>
+            <p>Zen © Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<!-- FUNCION DEL BOTON QUIERO UNIRME, FOTOS DE LA GALERIA -->
